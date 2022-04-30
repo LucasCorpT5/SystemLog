@@ -20,10 +20,16 @@ while True:
             print("Email jám cadastrado")
         elif resultado == 6:
             print("Erro interno do sistema")
+        elif resultado == 1:
+            print("Cadastro realizado com sucesso!")
 
     elif decidir == 2:
         email = input("Digite seu email: ")
         senha = input("Digite sua senha: ")
-        ControllerLogin.login(email, senha)
+        resultado = ControllerLogin.login(email, senha)
+        if not resultado:
+            print("Email ou senha invalidos")
+        else:
+            print(resultado)
     else:
-        ...
+        break

@@ -54,6 +54,4 @@ class ControllerLogin():
         else:
             return False
 
-# joaoSecretPass
-# joao@gmail.com
 print(ControllerLogin.login("joao@gmail.com", "joaoSecretPass"))
