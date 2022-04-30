@@ -2,7 +2,7 @@ from controller import ControllerCadastro, ControllerLogin
 
 while True:
     print("========== [MENU] ==========")
-    decidir = int(input("Digite 1 para cadastrar \n Digite 2 para logar \n Digite 3 para sair"))
+    decidir = int(input("Digite 1 para cadastrar \nDigite 2 para logar \nDigite 3 para sair\n"))
 
     if decidir == 1:
         nome = input("Digite seu nome: ")
